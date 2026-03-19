@@ -64,10 +64,10 @@ export default function GalleryPreview() {
               className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-4"
               style={{ backgroundColor: 'rgba(255,140,0,0.15)', color: '#CC7000' }}
             >
-              Campus Life
+              School Life
             </span>
             <h2 className="text-4xl font-bold" style={{ color: '#800000' }}>
-              Life at Project Secondary
+              Life at Kampala Preparatory School
             </h2>
           </div>
           <Link
