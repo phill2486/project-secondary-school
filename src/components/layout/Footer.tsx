@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg overflow-hidden">
   <Image
-    src="/kps2.jfif"
+    src="/kps-logo.png"
     alt="KPS Logo"
     width={40}
     height={40}

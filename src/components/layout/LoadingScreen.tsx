@@ -35,7 +35,7 @@ export default function LoadingScreen() {
   transition={{ delay: 0.5, duration: 0.6 }}
 >
   <Image
-    src="/kps2.jfif"
+    src="/kps-logo.png"
     alt="KPS Logo"
     width={96}
     height={96}

@@ -46,7 +46,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
   <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
     <Image
-      src="/kps2.jfif"
+      src="/kps-logo.png"
       alt="KPS Logo"
       width={40}
       height={40}
