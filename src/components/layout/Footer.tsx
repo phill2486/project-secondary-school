@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { GraduationCap, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react'
+import Image from 'next/image'
+
 
 export default function Footer() {
   return (
@@ -10,10 +12,15 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: '#FF8C00' }}>
-                <GraduationCap size={22} color="#800000" />
-              </div>
+              <div className="w-10 h-10 rounded-lg overflow-hidden">
+  <Image
+    src="/kps2.jfif"
+    alt="KPS Logo"
+    width={40}
+    height={40}
+    className="object-contain w-full h-full"
+  />
+</div>
               <div>
                 <p className="font-bold text-white leading-tight">Kampala Preparatory</p>
                 <p className="text-xs leading-tight" style={{ color: '#FF8C00' }}>School — Soaring To Excellence</p>

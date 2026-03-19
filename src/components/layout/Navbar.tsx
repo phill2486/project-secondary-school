@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, GraduationCap } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -42,18 +43,21 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div
-              className="w-9 h-9 rounded-lg flex items-center justify-center"
-              style={{ backgroundColor: '#F59E0B' }}
-            >
-              <GraduationCap size={20} color="#800000" />
-            </div>
-            <div className="hidden sm:block">
-<p className="text-white font-bold text-sm leading-tight">Kampala Preparatory</p>
-<p className="text-xs leading-tight" style={{ color: '#FF8C00' }}>School — KPS</p>
-            </div>
-          </Link>
+        <Link href="/" className="flex items-center gap-2 group">
+  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
+    <Image
+      src="/kps2.jfif"
+      alt="KPS Logo"
+      width={40}
+      height={40}
+      className="object-contain"
+    />
+  </div>
+  <div className="hidden sm:block">
+    <p className="text-white font-bold text-sm leading-tight">Kampala Preparatory</p>
+    <p className="text-xs leading-tight" style={{ color: '#FF8C00' }}>School — KPS</p>
+  </div>
+</Link>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-1">

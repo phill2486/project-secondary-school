@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { GraduationCap } from 'lucide-react'
+import Image from 'next/image'
 
 export default function LoadingScreen() {
   const [show, setShow] = useState(true)
@@ -29,13 +30,18 @@ export default function LoadingScreen() {
             className="flex flex-col items-center gap-4"
           >
             <motion.div
-              className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-2xl"
-              style={{ backgroundColor: '#FF8C00' }}
-              animate={{ rotate: [0, -10, 10, -10, 0] }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-            >
-              <GraduationCap size={40} color="#800000" />
-            </motion.div>
+  className="w-24 h-24 rounded-2xl overflow-hidden flex items-center justify-center shadow-2xl"
+  animate={{ rotate: [0, -10, 10, -10, 0] }}
+  transition={{ delay: 0.5, duration: 0.6 }}
+>
+  <Image
+    src="/kps2.jfif"
+    alt="KPS Logo"
+    width={96}
+    height={96}
+    className="object-contain"
+  />
+</motion.div>
 
             <div className="text-center">
               <motion.p
